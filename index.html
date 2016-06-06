@@ -1,85 +1,383 @@
 <!doctype html>
-<html lang="en">
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<head>
-		<meta charset="utf-8">
+	<title>reveal.js</title>
 
-		<title>NotiApp</title>
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/night.css">
 
-		<meta name="description" content="NotiApp Project">
-		<meta name="author" content="Maksym Kharuk">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>
+<body>
+<div class="reveal">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<div class="slides">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+		<section>
+			<h1>MP13</h1>
+			<h2>Projecte de síntesi</h2>
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+			<p>Maksym Kharuk</p>
+			<p>2n DAM 2015/16</p>
+		</section>
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+		<section data-transition="slide" data-background="#607d8b" data-background-transition="zoom">
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+			<h1>Boom tecnólgic</h1>
 
-	<body>
+			<section>
 
-		<div class="reveal">
+				<h2>2016</h2>
+				<h2>Smartphones</h2>
+				<h2>Apps mòbils</h2>
+				<h2>$$$</h2>
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section data-background="http://media3.giphy.com/media/DwlFRgKo87zDW/giphy.gif">
-					<h1>NotiApp [TODO]</h1>
-					<h3>Maksym Kharuk</h3>
-					<p>
-						<a style="font-weight: bold" href="https://github.com/maksymkhar">GitHub</a>
-						<span style="font-weight: bold;"> - </span>
-						<a style="font-weight: bold" href="http://acacha.org/mediawiki/Usuari:Maksymkhar">Wiki</a>
-					</p>
-				</section>
-			</div>
+			</section>
 
-		</div>
+			<section>
+				<h3>Les apps mòbils s'han convertit en un dels mercats amb més possibilitats de creixement en els pròxims anys</h3>
+			</section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+		</section>
 
-		<script>
+		<section data-transition="slide" data-background-transition="slide">
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+			<section data-background="#f44336">
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				<h1>Problema...</h1>
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+				<h3 class="fragment">No hi ha cap ferramenta de comunicació organitzativa</h3>
+				<h3 class="fragment">WhatsApp, Facebook, Email, etc. no són prou pràctics</h3>
 
-		</script>
+			</section>
 
-	</body>
+			<section data-background="#4caf50" 4caf50>
+
+				<h1>Solució!</h1>
+
+				<img class="fragment" data-src="img/becrier_title.png">
+
+			</section>
+
+		</section>
+
+		<section data-background="#795548" 4caf50>
+
+			<h1>Objectius</h1>
+
+			<section>
+				<h2 class="fragment" data-fragment-index="1">Backend</h2>
+				<h4 class="fragment">API</h4>
+				<h2 class="fragment" data-fragment-index="1">Frontend</h2>
+				<h4 class="fragment">Mobile App</h4>
+			</section>
+
+			<section data-background="#8bc34a">
+
+				<h2>Backend</h2>
+
+				<h3 class="fragment">CRUD de notificacions, usuaris i grups</h3>
+				<h3 class="fragment">Sistema d'autenticació i autorització</h3>
+				<h3 class="fragment">GCM i sistema de notificacions</h3>
+				<h3 class="fragment">Imatges de perfil d'usuaris i grups</h3>
+
+			</section>
+
+			<section data-background="#8bc34a">
+
+				<h2>Frontend</h2>
+
+				<h3 class="fragment">Connexió a la API</h3>
+				<h3 class="fragment">GCM i sistema de notificacions</h3>
+				<h3 class="fragment">Tractament d'imatges</h3>
+				<h3 class="fragment">Disseny modern</h3>
+
+			</section>
+
+			<section data-background="#f44336">
+
+				<h2>Incomplerts</h2>
+
+				<h3 class="fragment">Login i registre amb xarxes socials</h3>
+				<h3 class="fragment">Base de dades local (Frontend)</h3>
+				<h3 class="fragment">Provar algun framework de testing (Frontend)</h3>
+
+			</section>
+
+		</section>
+
+		<section data-background="#009688">
+
+			<section>
+				<h1>Arquitectura</h1>
+				<h2>Backend</h2>
+			</section>
+
+			<section>
+				<h1>Tecnologia</h1>
+				<h2 class="fragment" data-fragment-index="1">Framework</h2>
+				<h3 class="fragment" data-fragment-index="2">Laravel</h3>
+				<h4 class="fragment" data-fragment-index="2">Utilitza el patró MVC?</h4>
+				<h2 class="fragment" data-fragment-index="3">Persistència</h2>
+				<h3 class="fragment" data-fragment-index="4">MySQL</h3>
+				<h4 class="fragment" data-fragment-index="4">Eloquent ORM</h4>
+			</section>
+
+			<section>
+				<h1>Persistència</h1>
+				<h2 class="fragment">Factories</h2>
+				<h2 class="fragment">Seeds</h2>
+				<h2 class="fragment">Migrations</h2>
+			</section>
+
+			<section>
+				<h2>Persistència: Factories</h2>
+				<img data-src="img/factory_sample.png" width="150%" height="150%">
+			</section>
+
+			<section>
+				<h2>Persistència: Seeds</h2>
+				<img data-src="img/seed_sample.png" width="150%" height="150%">
+			</section>
+
+			<section>
+				<h2>Persistència: Migrations</h2>
+				<img data-src="img/migration_sample.png" width="150%" height="150%">
+			</section>
+
+			<section>
+				<h2>Persistència: Diagrama ER</h2>
+				<img data-src="img/NotiApp_Diagrama_EER.png" width="60%" height="60%">
+			</section>
+
+			<section>
+				<h1>Seguretat</h1>
+				<h2 class="fragment">Autenticació</h2>
+				<h2 class="fragment">Autorització</h2>
+			</section>
+
+			<section>
+				<h2>Seguretat: Autenticació</h2>
+				<h3>Api Keys</h3>
+			</section>
+
+			<section>
+				<h2>Seguretat: Autorització</h2>
+				<img data-src="img/policie_sample.png" width="150%" height="150%">
+			</section>
+
+			<section>
+				<h2>Seguretat: Autorització</h2>
+				<img data-src="img/policie_sample_2.png" width="150%" height="150%">
+			</section>
+
+			<section>
+				<h1>Design patterns</h1>
+				<h2 class="fragment">Dependency Injection</h2>
+				<h2 class="fragment">Repository pattern</h2>
+				<h2 class="fragment">Facade</h2>
+			</section>
+
+			<section>
+				<h1>Altres</h1>
+				<h2 class="fragment">Events</h2>
+				<h2 class="fragment">Jobs i cues</h2>
+				<h2 class="fragment">Tests</h2>
+			</section>
+
+			<section>
+				<h2>Events</h2>
+				<img data-src="img/event_sample.png" width="150%" height="150%">
+			</section>
+
+			<section>
+				<h2>Jobs i cues: Utilització</h2>
+				<img data-src="img/job_sample.png" width="150%" height="150%">
+			</section>
+
+			<section>
+				<h2>Jobs i cues: Configuració</h2>
+				<h3>Supervisor</h3>
+				<img data-src="img/job_sample_2.png" width="150%" height="150%">
+			</section>
+
+			<section>
+				<h2>Testing</h2>
+				<h3>PHPUnit</h3>
+				<img data-src="img/test_sample.png"  width="150%" height="150%">
+			</section>
+
+			<section>
+				<h2>Testing: Coverage</h2>
+
+				<div class="fragment">
+					<h3>56</h3>
+					<h5>proves executades</h5>
+				</div>
+
+				<div class="fragment">
+					<h3>70.91%</h3>
+					<h5>de classes provades</h5>
+				</div>
+
+				<div class="fragment">
+					<h3>78.43%</h3>
+					<h5>de mètodes provats</h5>
+				</div>
+
+				<div class="fragment">
+					<h3>81.82%</h3>
+					<h5>de línies de codi provades</h5>
+				</div>
+			</section>
+
+		</section>
+
+		<section data-background="#607d8b">
+
+			<section>
+				<h1>Arquitectura</h1>
+				<h2>Frontend</h2>
+			</section>
+
+			<section>
+				<h1>Tecnologia</h1>
+				<h2 class="fragment">Nativa? Web? Hibrida?</h2>
+				<h3 class="fragment">Nativa Android</h3>
+			</section>
+
+			<section>
+				<h1>Persistència</h1>
+				<h2 class="fragment">Shared Preferences</h2>
+				<h2 class="fragment">Fitxers en local</h2>
+			</section>
+
+			<section>
+				<h2>Persistència: SharedPreferences</h2>
+				<img data-src="img/shared_preferences_sample.png"  width="150%" height="150%">
+			</section>
+
+			<section>
+				<h2>Persistència: Fitxers en local</h2>
+				<img data-src="img/external_storage_sample.png"  width="150%" height="150%">
+			</section>
+
+			<section>
+				<h1>Material Design</h1>
+				<h2 class="fragment">SwipeRefreshLayout</h2>
+				<h2 class="fragment">RecyclerViews</h2>
+				<h2 class="fragment">CardViews</h2>
+				<h2 class="fragment">FloatingActionButton</h2>
+			</section>
+
+			<section>
+				<h2>Material Design: Vistes custom</h2>
+				<img data-src="img/custom_view_sample.png"  width="150%" height="150%">
+			</section>
+
+			<section>
+				<h1>Design patterns</h1>
+				<h2 class="fragment">Adapter</h2>
+			</section>
+
+			<section>
+				<h2>Design patterns: Adapter</h2>
+				<img data-src="img/adapter_sample.png"  width="150%" height="150%">
+			</section>
+
+		</section>
+
+		<section>
+
+			<section>
+				<h1>Testing</h1>
+				<h2>Google Cloud Test Lab</h2>
+			</section>
+
+			<section>
+				<img data-src="img/cloud_test_lab_1.png"  width="150%" height="150%">
+			</section>
+
+			<section>
+				<img data-src="img/cloud_test_lab_2.png"  width="150%" height="150%">
+			</section>
+
+			<section>
+				<img data-src="img/cloud_test_lab_3.png">
+			</section>
+
+		</section>
+
+		<section data-background-video="src/test_1.mp4" data-background-video-loop data-background-video-muted>
+		</section>
+
+		<section data-background="#607d8b">
+
+			<h1>Dependències</h1>
+
+			<section>
+				<h2>Backend</h2>
+				<ul>
+					<li class="fragment">ApiGuard</li>
+					<li class="fragment">Laravel 5 IDE Helper Generator</li>
+					<li class="fragment">Laravel Push Notification</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Frontend</h2>
+				<ul>
+					<li class="fragment">Ion</li>
+					<li class="fragment">Android Image Cropper</li>
+					<li class="fragment">RoundedImageView</li>
+					<li class="fragment">Material Dialogs</li>
+				</ul>
+			</section>
+
+		</section>
+
+		<section data-background="#4caf50">
+			<h1>Demo</h1>
+			<h2>www.becrier.com</h2>
+			<img data-src="img/becrier_title.png">
+		</section>
+
+		<section data-background="#009688">
+			<h1>Conclusió</h1>
+		</section>
+
+
+	</div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+	// More info https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		history: true,
+		// More info https://github.com/hakimel/reveal.js#dependencies
+		dependencies: [
+			{ src: 'plugin/markdown/marked.js' },
+			{ src: 'plugin/markdown/markdown.js' },
+			{ src: 'plugin/notes/notes.js', async: true },
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+		]
+	});
+</script>
+</body>
 </html>
